@@ -657,6 +657,7 @@ export default function Home() {
                         640: { slidesPerView: 1 },
                         768: { slidesPerView: 2 },
                         1024: { slidesPerView: 3 },
+                       1280: { slidesPerView: 4 },
                     }}
                     className="books-swiper"
                 >
