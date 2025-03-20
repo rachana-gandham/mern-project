@@ -14,7 +14,7 @@ export default function Cart() {
 
     async function fetchCartProducts() {
         try {
-            const res = await axios.get("http://localhost:4002/api/cart", {
+            const res = await axios.get("https://online-book-store-bcx6.onrender.com/api/cart", {
                 headers: { Authorization: `Bearer ${user.token}` },
             });
             console.log("Cart data:", res.data);
@@ -44,7 +44,7 @@ export default function Cart() {
     async function removeFromCart(productId) {
         try {
             const res = await axios.delete(
-                `http://localhost:4002/api/cart/remove/${productId}`, 
+                `https://online-book-store-bcx6.onrender.com/api/cart/remove/${productId}`, 
                 {
                     headers: { Authorization: `Bearer ${user.token}` },
                 }

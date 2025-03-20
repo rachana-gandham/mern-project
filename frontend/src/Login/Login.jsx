@@ -11,7 +11,7 @@
 //   }
 //   function handleLogin(e){
 //     e.preventDefault()
-//     axios.post("http://localhost:4002/api/auth/login",formData)
+//     axios.post("https://online-book-store-bcx6.onrender.com/api/auth/login",formData)
 //       .then((res)=>{
 //         console.log("login response",res)
 //         if(res.status===200){
@@ -90,7 +90,7 @@ export default function Login() {
   function handleLogin(e) {
     e.preventDefault();
     axios
-      .post("http://localhost:4002/api/auth/login", formData)
+      .post("https://online-book-store-bcx6.onrender.com/api/auth/login", formData)
       .then((res) => {
         console.log("Login response", res);
         if (res.status === 200) {
